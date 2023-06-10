@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+body {
+  margin: 0;
+  background-image: linear-gradient(to right, black, blue);
+
+  color: white;
+  font-family: "share Tech Mono", monos Pace;
+  user-select: none;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(to right, black, blue);
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+@media screen and (max-width: 1000px) {
+  .image {
+    margin-left: -50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .clip {
+    display: none;
+  }
+}
+.clip {
+  height: 50px;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  border: 2px solid white;
+  margin-right: 10px;
+  border-image: linear-gradient(to right, magenta, blue);
+  color: white;
+  text-shadow: 0px 4px 16px;
+
+  clip-path: polygon(
+    2rem 0,
+    calc(100% + 2rem) 0,
+    calc(100% - 2rem) 100%,
+    -2rem 100%
+  );
+}
+.clip:hover {
+  background-image: linear-gradient(to right, magenta, blue);
+  color: white;
+  box-shadow: 0px 4px 16px;
+}
+.clip2 {
+  height: 50px;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  border: 2px solid white;
+  margin-right: 10px;
+  border-image: linear-gradient(to right, magenta, blue);
+  color: white;
+  text-shadow: 0px 4px 16px;
+
+  clip-path: polygon(
+    2rem 0,
+    calc(100% + 2rem) 0,
+    calc(100% - 2rem) 100%,
+    -2rem 100%
+  );
+}
+.clip2:hover {
+  background-image: linear-gradient(to right, magenta, blue);
+  color: white;
+  box-shadow: 0px 4px 16px;
+}
+.loginbuttons {
+  margin-right: 70px;
+}
+.content {
+  text-align: center;
+  margin-top: 110px;
+  height: 600px;
+  display: flex;
+  background-image: url("../images/ei_1684687853116-removebg-preview.png");
+  background-repeat: no-repeat;
+  justify-content: space-around;
+}
+@media screen and (max-width: 1000px) {
+  .content {
+    background-image: none;
+  }
+}
+.animated-word {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+}
+@media screen and (max-width: 1000px) {
+  .animated-word {
+    font-size: 42px;
+    margin-left: -40px;
+  }
+}
+.letter {
+  transition: 0.4s;
+  transform: translateX(0);
+  cursor: grab;
+  border-image: linear-gradient(to right, magenta, blue);
+  color: white;
+  text-shadow: 0px 4px 16px;
+}
+.letter:hover {
+  transform: translateY(-1rem);
+  background: -webkit-linear-gradient(120deg, magenta, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bla {
+  font-size: 30px;
+  border-image: linear-gradient(to right, magenta, blue);
+  color: white;
+  text-shadow: 0px 4px 16px;
+}
+@media screen and (max-width: 1000px) {
+  .bla {
+    font-size: 20px;
+  }
+}
+h1 {
+  border-image: linear-gradient(to right, magenta, blue);
+  color: white;
+  text-shadow: 0px 4px 16px;
+}
+#games {
+  background-image: linear-gradient(to right, black, blue);
+  height: 700px;
+  width: 100%;
+}
+
+#news {
+  background-image: linear-gradient(to right, black, blue);
+  height: 700px;
+  width: 100%;
+}
+
+#mods {
+  background-image: linear-gradient(to right, black, blue);
+  height: 700px;
+  width: 100%;
+}
+
+/* mobile navbar*/
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.active {
+  color: white;
+}
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+span {
+  font-size: 35px;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  span {
+    margin-right: 50px;
+    margin-top: 10px;
+    display: block;
+  }
+}
+
+.news {
+  height: auto;
+  width: 400px;
+  margin-left: 20px;
+  align-items: center;
+}
+.mods {
+  height: auto;
+  width: 400px;
+  margin-left: 20px;
+  align-items: center;
+}
+.scrollgames {
+  overflow-x: scroll;
+  width: 100%;
+  background-image: linear-gradient(to right, black, blue);
+  display: flex;
+  justify-content: space-around;
+  overflow-y: hidden;
+}
+.games1 {
+  width: 290px;
+  margin-left: 20px;
+  align-items: center;
+  background: white;
+  box-shadow: inset 17px 17px 34px magenta, inset -17px -17px 34px blue;
+  color: black;
+  text-align: center;
+}
